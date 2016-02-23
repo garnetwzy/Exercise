@@ -18,7 +18,7 @@
         <scene sceneID="hmn-Yb-8C9">
             <objects>
                 <navigationController storyboardIdentifier="runActivity" id="C2v-k9-ABY" customClass="RunActivityNavigationViewController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="运动" selectedImage="icon_tab_fujin_highlight" id="fSB-M0-HmL"/>
+                    <tabBarItem key="tabBarItem" title="运动" image="icon_tab_fujin_highlight" selectedImage="icon_tab_fujin_highlight" id="fSB-M0-HmL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tnS-vx-zbz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -154,12 +154,12 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                        <rect key="frame" x="8" y="14" width="327" height="22"/>
+                                    </variation>
                                 </label>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="afZ-Pm-WSV">
                                     <rect key="frame" x="-25" y="-15" width="51" height="31"/>
-                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                        <rect key="frame" x="343" y="9" width="51" height="32"/>
-                                    </variation>
                                 </switch>
                             </subviews>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

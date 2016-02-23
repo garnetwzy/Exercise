@@ -44,6 +44,7 @@
     self.timer = [NSTimer scheduledTimerWithTimeInterval:(1.0) target:self selector:@selector(eachSecond) userInfo:nil repeats:YES];
     self.distance = 0;
     self.locations = [NSMutableArray array];
+    self.mapView.showsUserLocation = true;
     [self startLocationUpdates];
 
 
@@ -147,9 +148,9 @@
                 coords[0] = ((CLLocation *)self.locations.lastObject).coordinate;
                 coords[1] = newLoc.coordinate;
                 
-                MKCoordinateRegion region =
-                MKCoordinateRegionMakeWithDistance(newLoc.coordinate, 500, 500);
-                [self.mapView setRegion:region animated:YES];
+//                MKCoordinateRegion region =
+//                MKCoordinateRegionMakeWithDistance(newLoc.coordinate, 500, 500);
+//                [self.mapView setRegion:region animated:YES];
                 
                 [self.mapView addOverlay:[MKPolyline polylineWithCoordinates:coords count:2]];
             }
@@ -173,6 +174,14 @@
     
     return nil;
 }
+
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
+    MKCoordinateRegion region =
+    MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 500, 500);
+    [self.mapView setRegion:region animated:YES];
+    
+}
+
 #pragma mark - UIActionSheetDelegate
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
