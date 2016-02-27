@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '12E474E7E02CA29B6721BE19'
+               BlueprintIdentifier = 'AB714E14FC303F83CA6F1019'
                BlueprintName = 'JZLocationConverter'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libJZLocationConverter.a'>
